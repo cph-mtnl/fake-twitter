@@ -1,16 +1,18 @@
 import React from 'react';
+import "./App.css"
 
 function App() {
+
+  function handleLogin() {
+    console.log("Clicked")
+  }
+
   return (
-    <div style={{ textAlign: 'center' }}>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <div className='title'>
+        <h1>Fake Twitter</h1>
+        <button className='login-button' onClick={handleLogin}>Sign in</button>
+      </div>
     </div>
   );
 }
